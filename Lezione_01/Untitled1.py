@@ -1,0 +1,1 @@
+print("Hello World!")git remote add origin https://github.com/Ninni51/its-esercizi.gitgit remote add origin https://github.com/Ninni51/its-esercizi.gitgit remote add origin https://github.com/Ninni51/its-esercizi.git git remote add origin https://github.com/Ninni51/its-esercizi.git
