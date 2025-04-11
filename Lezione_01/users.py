@@ -21,23 +21,24 @@ class User:
             else:
                 print(f"Hello lady {self.name}")
 
-    def increment_login_attempts(self) -> None:
-        self.loginAttempts += 1  
+class Privileges:
+    def __init__ (self, canEdit:bool, canAccess:bool, canComment:bool, canDelete:bool):
+        self.canEdit = canEdit
+        self.canAccess = canAccess
+        self.canComment = canComment
+        self.canDelete = canDelete
 
-    def reset_login_attempts(self) -> None:  
-        self.loginAttempts = 0  
+    def showPrivileges(self) -> None:
+        print(f"User privileges: \n Editing: {self.canEdit}\n Accessing: {self.canAccess}\n Commenting: {self.canComment}\n Deleting: {self.canDelete}")
 
-user1 = User("Mauro", "Abate", 53, "M")
-user1.describeUser()
-user1.greetUser()
+class Admin:
+    def __init__(self, user:User, privileges:Privileges):
+        self.User = user
+        self.Privileges = privileges
 
-print(f"Login attempts: {user1.loginAttempts}")
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-user1.increment_login_attempts()
-print(f"Login after incrementing: {user1.loginAttempts}")
-user1.reset_login_attempts()
-print(f"Login reset: {user1.loginAttempts}")
+utente = User("Ciccio", "Pasticcio", 20, "M")
+utentepermessi = Privileges(True, True, True, True)
+
+User1 = Admin(utente, utentepermessi)
+User1.utente.greetUser()
+User1.utentepermessi.showPrivileges()
