@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Document</title>
+<script>
+
+    console.log(nome); //undefined
+    // FASE 1- fino al 2009
+    // Hoisting : "sposta" il codice
+    //      1 sposta tutte le dichiarazioni di variabili in cima allo scope 
+    //      2 sposta tutte le funzioni
+    var nome = "Mario";
+    var nome = "Luca"; // override
+
+    // FASE 2 - dal 2009 ES
+    let nome = "Mario";
+    // let nome2 = "Luca";
+
+    //js :
+    let pippo = 10; 
+    pippo = ciao; //var
+
+    let x = 10
+
+    y = 20
+
+    console.log(x);
+
+    // string number boolean null undefined
+
+    //string
+
+    var nominativo = "Mario";
+    var nominativo2 = "Mario" + x + "Rossi"
+
+    //Fase 2 template string ... backtick accento grave ALT + 96 tastierino (`)
+    let nominativo = `Mario ${x} Rossi è il mio collega`
+
+    console.log(nominativo);
+    
+    let anni = 10;
+    console.log(typeof(anni))
+
+    parseFloat(anni)
+    parseInt(anni)
+
+    console.log(anni * "ciao"); NaN
+
+    if(NaN == NaN) {
+        //darà sempre false perchè NaN non è uguale a NaN
+    }
+
+    isNan("Ciao") // true
+    isNan("") // false
+
+    // true = 1
+    // false = 0
+    let z = "";
+
+    console.log(true*3) // 2
+    console.log("a"+3) // 3
+
+    //js
+    let r = null; // null
+    let w ; //undefined
+    
+    </script>
+</head>
+<body>
+    <h1>JS Le variabili</h1>
+</body>
+</html>
