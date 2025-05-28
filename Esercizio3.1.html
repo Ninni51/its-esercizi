@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="risultato"></div>
+    <div id="media"></div>
+    <script>
+        let numero = prompt("inserisci il primo numero");
+        numero=parseInt(numero);
+        let numero2 = prompt("inserisci il secondo numero");
+        numero2 = parseInt(numero2);
+        let numero3 = prompt("inserisci il terzo numero");
+        numero3=parseInt(numero3);
+        let numero4 = prompt("inserisci il quarto numero");
+        numero4 = parseInt(numero4);
+        let numero5 = prompt("inserisci il quinto numero");
+        numero5 = parseInt(numero5);
+
+        somma = numero + numero2 + numero3 + numero4 + numero5;
+        media = somma / 5;
+
+        document.getElementById("risultato").innerHTML = "La somma di " + numero + " + " + numero2 + " + " + numero3 + " + " + numero4 + " + " + numero5 + " è " + somma;
+        document.getElementById("media").innerHTML = "La media di " + numero + " + " + numero2 + " + " + numero3 + " + " + numero4 + " + " + numero5 + " è " + media;
+    </script>
+</body>
+</html>
+

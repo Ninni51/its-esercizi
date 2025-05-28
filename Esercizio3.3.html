@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="quantitativo"></div>
+    <script>
+        let secondi = prompt("inserisci il numero di secondi da calcolare");
+        secondi=parseInt(secondi);
+        let ore = secondi / 3600;
+        let minuti = secondi % 3600 / 60;
+        let secondiFinali = secondi % 60;
+        document.getElementById("quantitativo").innerHTML =  ore + "ore, " + minuti + " minuti e " + secondi + " secondi."
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="etàcalcolata"></div>
+    <script>
+        let annonascita = prompt("inserisci l'anno di nascita");
+        annonascita=parseInt(annonascita);
+        let annocorrente = 2025
+        let etàcalcolata = annocorrente - annonascita
+        document.getElementById("etàcalcolata").innerHTML = "L'anno attuale è " + annocorrente + " e il tuo anno di nascita è " + annonascita + ", pertanto tu hai " + etàcalcolata + " anni."
+    </script>
+</body>
+</html>
+

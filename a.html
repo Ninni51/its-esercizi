@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Time Converter</title>
+</head>
+<body>
+    <div id="quantitativo"></div>
+    <script>
+        let secondi = prompt("Inserisci il numero di secondi da calcolare:");
+        secondi = parseInt(secondi);
+
+        if (!isNaN(secondi) && secondi >= 0) {
+            let ore = Math.floor(secondi / 3600);
+            let minuti = Math.floor((secondi % 3600) / 60);
+            let secondiFinali = secondi % 60;
+
+            document.getElementById("quantitativo").innerHTML =
+                ore + " ore, " + minuti + " minuti e " + secondiFinali + " secondi.";
+        } else {
+            document.getElementById("quantitativo").innerHTML = "Inserisci un numero valido di secondi.";
+        }
+    </script>
+</body>
+</html>
