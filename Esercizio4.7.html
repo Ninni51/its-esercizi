@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="piugrande"></div>
+    <script>
+    let piugrande
+    for (var cont = 1; cont < 8; cont++) {
+        let numero = prompt("inserisci il " + cont + "° numero");
+        numero=parseInt(numero);
+        if(cont == 1){
+            piugrande = parseInt(numero)
+        }
+        else if(numero>piugrande){
+            piugrande = parseInt(numero)
+        }
+    }
+    document.getElementById("piugrande").innerHTML = "Il più grande dei numeri inseriti è " + piugrande
+    </script>
+</body>
+</html>

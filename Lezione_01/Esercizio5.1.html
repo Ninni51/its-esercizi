@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document</title>
+<script>
+// fase1
+    function () {
+        console.log("Fase 1");
+}
+// ARROW FUNCTION... funzione anonima
+// () => {}
+// funzione viene chiamata automaticamente ? // fase 2
+let x = () => {
+    console.log("Fase 2");    
+};
+
+// 1 - parametro è 1 solo... le tonde non sono obbligatorie
+// 2 - il contenuto della funzione è una sola istruzione... le graffe non sono obbligatorie
+
+x();
+
+// Arrow function vengono utilizzate nella maggior parte dei casi come callback
+// Callback... funzione che viene passata come parametro ad un altra funzione
+
+x(y);
+let giorni = ["lunedi", "martedì", "mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"];
+
+for (let i = 0; i < giorni.length; i++) { 
+    console.log(giorni[i]);
+}
+for (let giorno of giorni) { 
+    console.log(giorno);
+}
+for (let indice in giorni) {
+    console.log(giorni [indice]);
+}
+// foreach() e map() sono metodi degli array 
+giorni.forEach((giorno, indice) => {
+    console.log(giorno, indice);
+});
+
+giorni.map((giorno) => {
+    console.log(giorno);
+});
+
+let ciclofor = giorni.forEach(giorno => console.log(giorno));
+
+let ciclomap = giorni.map(giorno, index) => {
+    if(index == 0){
+        giorno = "Anonimo";
+    }
+}
+
+</script>
+</head>
+I
+<body>
+<h1>Esercizio 1</h1>
+</body>
+</html>

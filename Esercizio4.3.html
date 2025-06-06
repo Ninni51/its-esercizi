@@ -1,0 +1,21 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    </head>
+    <body>
+        <div id="tabella"></div>
+        <script>
+            let output = "";            
+            for (var cont = 5; cont < 16; cont++) {
+            // o alternativamente: var cont = 5
+            // while cont < 16 {
+            // cont++
+            // } 
+            output += cont + "<br>";
+            }
+            document.getElementById("tabella").innerHTML = output 
+        </script>
+    </body>
+    </html>

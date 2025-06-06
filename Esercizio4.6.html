@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="risultato"></div>
+
+    <script>
+    let output = "";            
+    for (var cont = 1; cont < 6; cont++) {
+        let numero = prompt("inserisci il " + cont + "° numero");
+        numero=parseInt(numero);
+        output = parseInt(output+numero);
+    }
+    document.getElementById("risultato").innerHTML = "La media dei numeri inseriti è di" + output/5
+    </script>
+</body>
+</html>

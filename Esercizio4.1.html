@@ -1,0 +1,24 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    </head>
+    <body>
+        <div id="tabella"></div>
+        <script>
+            let output = "";            
+            let numero = prompt("inserisci un numero da 1 a 10");
+            numero=parseInt(numero);
+            for (var cont = 1; cont < 11; cont++) {
+            // o alternativamente: cont = 1
+            // while cont < 10 {
+            // cont++
+            // } 
+            output += numero + " * " + cont + " = " + (numero * cont) + "<br>";
+            }
+            document.getElementById("tabella").innerHTML = output
+        </script>
+    </body>
+    </html>
+

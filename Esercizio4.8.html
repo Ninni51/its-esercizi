@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div id="pari"></div>
+    <div id="dispari"></div>
+    <script>
+    let pari = 0
+    let dispari = 0
+    for (var cont = 1; cont < 11; cont++) {
+        let numero = prompt("inserisci il " + cont + "° numero");
+        numero=parseInt(numero);
+        if(numero%2==0){
+            pari++
+        }
+        else{
+            dispari++
+        }
+    }
+    document.getElementById("pari").innerHTML = "Il quantitativo di numeri pari è " + pari
+    document.getElementById("dispari").innerHTML = "Il quantitativo di numeri dispari è " + dispari
+    </script>
+</body>
+</html>
