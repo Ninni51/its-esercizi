@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+</head> 
+<body>
+    <div id="root"></div>
+<script>rootElement=document.querySelector("#root");
+
+const root=ReactDOM.createRoot(rootElement);
+
+const App= ()=>{
+    return (
+        <main className="main">
+            <h1>Primo componente</h1>
+        </main>
+    )
+}
+
+root.render(
+    <App></App>
+)
+</script>

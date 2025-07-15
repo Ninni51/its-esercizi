@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+</head> 
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="script.jsx" type="text/babel"></script>
+<script>
+    const rootElement=document.querySelector("#root"); 
+    const root =ReactDOM.createRoot(rootElement); 
+    console.log(rootElement);
+    const persona={
+        nome: "Rob",
+        cognome: "Del"
+    }
+    const h1= React.createElement("h1",{
+        style:{
+            color:"red",
+            border:"1px #000 solid",
+            padding:"5px"
+        },
+    classname:"big",
+    onClick: function(el){console.log(el.target)}
+    }, "primo tag h1 con react");
+</script>
+
+</body>
+</html>
